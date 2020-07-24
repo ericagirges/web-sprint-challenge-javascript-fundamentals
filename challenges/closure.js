@@ -17,7 +17,7 @@ function myFunction() {
 myFunction();
 
 // Explanation: 
-//nestedFunction can access internal because nestedFunction is the child to the parent function external. The child always has access to and inherits all variables and elements from its parent function.
+//nestedFunction can access internal because nestedFunction is the child to the parent function external. The child always has access to all variables and elements from its parent function.
 
 
 /* Task 2: Counter */
