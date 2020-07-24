@@ -90,10 +90,26 @@ console.log(populationTotal(zooAnimals));
 // console.log(consume(10, 16, multiply)); // 160
 // console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice to meet you!
 
-function hOF(a, b, cb)
+function consume(a, b, cb){
+  return cb(a, b);
+}
 
 
+const add = function(num1, num2){
+  return num1 + num2;
+}
 
+const multiply = function(num1, num2){
+  return num1 * num2;
+}
+
+const greeting = function(firstName, lastName){
+  return `Hello ${firstName} ${lastName}, nice to meet you!`
+}
+
+console.log(consume(2, 2, add));
+console.log(consume(10, 16, multiply));
+console.log(consume("Mary", "Poppins", greeting));
 
 /*
 
